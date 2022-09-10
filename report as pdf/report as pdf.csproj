@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>report_as_pdf</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="rep\repcustomer1.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="GroupDocs.Conversion" Version="22.8.0" />
+    <PackageReference Include="Html2Pdf" Version="1.0.6" />
+    <PackageReference Include="iTextSharp" Version="5.5.13.3" />
+    <PackageReference Include="itextsharp.pdfa" Version="5.5.13.3" />
+    <PackageReference Include="itextsharp.xmlworker" Version="5.5.13.3" />
+    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.9" />
+    <PackageReference Include="WebSharper.JsPDF" Version="4.7.2.203" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="GroupDocs.Viewer">
+      <HintPath>..\..\..\..\Downloads\files\GroupDocs.Viewer-for-.NET-master\GroupDocs.Viewer-for-.NET-master\Examples\packages\GroupDocs.Viewer.22.7.0\lib\netstandard2.1\GroupDocs.Viewer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\..\..\..\..\..\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\Web\Razor\v3.0\MVC5.2.2\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v3.5\Profile\Client\System.Windows.Forms.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\files\" />
+  </ItemGroup>
+
+</Project>
